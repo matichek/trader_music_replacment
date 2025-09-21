@@ -1,0 +1,12 @@
+MOVED TO CORRECT LOCATION!
+
+The trader music files are actually located in:
+sfx\ambient\platform\
+
+Files to replace:
+- market_block_music_01.ogg
+- market_block_music_02.ogg  
+- market_block_music_03.ogg
+- market_block_music_04.ogg
+
+This folder is no longer needed - use the sfx\ambient\platform\ folder instead.
