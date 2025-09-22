@@ -1,41 +1,19 @@
-<?xml version="1.0" encoding="utf-8"?>
-<sound_library>
-  <!-- Override trader music definitions -->
-  <sound id="corner_arg_standard_inventorytrader_music" description="Market block music, playing above the inventory trader workbench" repeat="-1" is3d="1" preload="0">
+<?xml version="1.0" encoding="UTF-8"?>
+<diff>
+  <!-- Replace trader music with custom tracks -->
+  <replace sel="/soundlibrary/sound[@id='corner_arg_standard_inventorytrader_music']/sample">
     <sample selection="random">
-      <select start="sfx\ambient\platform\mod_market_block_music_01"/>
-      <select start="sfx\ambient\platform\mod_market_block_music_02"/>
-      <select start="sfx\ambient\platform\mod_market_block_music_03"/>
-      <select start="sfx\ambient\platform\mod_market_block_music_04"/>
+      <select start="extensions\trader_music_replacment\sfx\market_block_music_01.ogg"/>
+      <select start="extensions\trader_music_replacment\sfx\market_block_music_02.ogg"/>
+      <select start="extensions\trader_music_replacment\sfx\market_block_music_03.ogg"/>
+      <select start="extensions\trader_music_replacment\sfx\market_block_music_04.ogg"/>
     </sample>
-    <volume start="0.2" distance="0.15"/>
-  </sound>
+  </replace>
   
-  <sound id="corner_arg_standard_shipequipment_music" description="Market block music" repeat="-1" is3d="1" preload="0">
+  <replace sel="/soundlibrary/sound[@id='corner_arg_standard_shipequipment_music']/sample">
     <sample selection="random">
-      <select start="sfx\ambient\platform\mod_market_block_music_01"/>
-      <select start="sfx\ambient\platform\mod_market_block_music_03"/>
+      <select start="extensions\trader_music_replacment\sfx\market_block_music_01.ogg"/>
+      <select start="extensions\trader_music_replacment\sfx\market_block_music_03.ogg"/>
     </sample>
-    <volume start="1.0" distance="0.05"/>
-  </sound>
-  
-  <sound id="corner_arg_standard_inventorytrader_music_01" description="Market block music" repeat="-1" is3d="1" preload="0">
-    <sample start="sfx\ambient\platform\mod_market_block_music_01"/>
-    <volume start="1.0" distance="0.05"/>
-  </sound>
-  
-  <sound id="corner_arg_standard_inventorytrader_music_02" description="Market block music" repeat="-1" is3d="1" preload="0">
-    <sample start="sfx\ambient\platform\mod_market_block_music_02"/>
-    <volume start="1.0" distance="0.05"/>
-  </sound>
-  
-  <sound id="corner_arg_standard_inventorytrader_music_03" description="Market block music" repeat="-1" is3d="1" preload="0">
-    <sample start="sfx\ambient\platform\mod_market_block_music_03"/>
-    <volume start="1.0" distance="0.05"/>
-  </sound>
-  
-  <sound id="corner_arg_standard_inventorytrader_music_04" description="Market block music" repeat="-1" is3d="1" preload="0">
-    <sample start="sfx\ambient\platform\mod_market_block_music_04"/>
-    <volume start="1.0" distance="0.05"/>
-  </sound>
-</sound_library>
+  </replace>
+</diff>
