@@ -43,14 +43,6 @@ Located in: `sfx\`
       └── market_block_music_04.ogg
    ```
 
-## Finding the Exact Files
-
-To identify which music file is playing in the trader section:
-
-1. Use X4 Customizer tool to extract game assets
-2. Listen to music files in `assets\music\` folder
-3. Or check existing "No Music" mods to see which files they replace
-
 ## Notes
 
 - OGG format is required for X4
